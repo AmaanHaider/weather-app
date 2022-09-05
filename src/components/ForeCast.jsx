@@ -4,8 +4,10 @@ import React from "react";
 
 const ForeCast = () => {
   return (
-    <Container maxW="750px" mt={5}>
-      <Heading>Todays Forecast for New Your City,Ny,United States</Heading>
+    <Container backgroundColor="white" maxW="750px" mt={5} sx={{
+      borderRadius:"8px"
+    }}>
+      <Heading size='md'>Todays Forecast for New Your City,Ny,United States</Heading>
       <Box mt={5}  sx={{
           display:"flex",
           gap:"50px",
@@ -36,8 +38,7 @@ const ForeCast = () => {
           <Text>0%</Text>
         </Box>
       </Box>
-
-      <Button  mt={5} colorScheme="messenger">Next Hours</Button>
+      <Button mt={5} colorScheme="messenger">Next Hours</Button>
     </Container>
   );
 };
