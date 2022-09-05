@@ -4,10 +4,12 @@ import React from "react";
 
 const ForeCast = () => {
   return (
-    <Container mt={5}>
+    <Container maxW="750px" mt={5}>
       <Heading>Todays Forecast for New Your City,Ny,United States</Heading>
       <Box mt={5}  sx={{
-          display:"flex"
+          display:"flex",
+          gap:"50px",
+          alignItems:"center"
         }}>
         <Box>
           <Text>Morning</Text>

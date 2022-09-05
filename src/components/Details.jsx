@@ -4,7 +4,7 @@ import React from "react";
 
 const Details = () => {
   return (
-    <Container mt={5}>
+    <Container maxW="750px" mt={5}>
       <Heading>Weather Today in New York City,NY,United States</Heading>
       <Box sx={{
         display:"flex"
