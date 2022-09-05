@@ -11,7 +11,10 @@ import {WiHumidity,WiMoonAltWaxingCrescent3} from 'react-icons/wi'
 
 const Details = () => {
   return (
-    <Container maxW="750px" mt={5}>
+    <Container maxW="750px" mt={7} sx={{
+      borderRadius:"8px",
+      backgroundColor:"white"
+    }}>
       <Heading size='md'>Weather Today in New York City,NY,United States</Heading>
       <Box sx={{
         display:"flex",
