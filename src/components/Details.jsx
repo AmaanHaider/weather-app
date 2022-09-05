@@ -1,180 +1,246 @@
 import { SmallAddIcon } from "@chakra-ui/icons";
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Container, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import { FaTemperatureHigh,FaWind} from 'react-icons/fa';
-import {AiFillEye} from 'react-icons/ai'
- import {BsDropletHalf} from 'react-icons/bs'
-import {BiSun} from 'react-icons/bi'
-import {WiHumidity,WiMoonAltWaxingCrescent3} from 'react-icons/wi'
-
-
+import { FaTemperatureHigh, FaWind } from "react-icons/fa";
+import { AiFillEye } from "react-icons/ai";
+import { BsDropletHalf } from "react-icons/bs";
+import { BiSun } from "react-icons/bi";
+import { WiHumidity, WiMoonAltWaxingCrescent3 } from "react-icons/wi";
 
 const Details = () => {
   return (
-    <Container maxW="750px" mt={7} sx={{
-      borderRadius:"8px",
-      backgroundColor:"white"
-    }}>
-      <Heading size='md'>Weather Today in New York City,NY,United States</Heading>
-      <Box sx={{
-        display:"flex",
-        gap:"50px"
-      }}>
-      
-      <Box  sx={{
-        border:"1px solid red",
-        width:"350px"
-      }}>
-        <Text fontSize="50">21</Text>
-        <Text fontSize="15">Feels Like</Text>
+    <Container
+      maxW="750px"
+      mt={7}
+      sx={{
+        borderRadius: "8px",
+        backgroundColor: "white",
+      }}
+    >
+      <Heading size="md">
+        Weather Today in New York City,NY,United States
+      </Heading>
+      <Box
+        mt={2}
+        sx={{
+          display: "flex",
+          gap: "50px",
+        }}
+      >
         <Box
           sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
+            width: "350px",
           }}
         >
+          <Text fontSize="50">21</Text>
+          <Text fontSize="15">Feels Like</Text>
           <Box
+            mt={5}
             sx={{
+              borderTop: "1px solid grey",
               display: "flex",
+              justifyContent: "space-between",
             }}
           >
-            <FaTemperatureHigh />
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <FaTemperatureHigh />
+              </Center>
 
-            <Text>High/Low</Text>
+              <Text ml={4} fontSize="22px" mt={2}>
+                High/Low
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              30/20
+            </Text>
           </Box>
-          <Text>30/20</Text>
+          <Box
+            sx={{
+              borderTop: "1px solid grey",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Center>
+                <WiHumidity />
+              </Center>
+
+              <Text ml={4} fontSize="22px" mt={2}>
+                Humidity
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              67%
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              borderTop: "1px solid grey",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <SmallAddIcon />
+              </Center>
+
+              <Text ml={4} fontSize="22px" mt={2}>
+                Pressure
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              {" "}
+              !012.5 mb
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              borderTop: "1px solid grey",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <AiFillEye />
+              </Center>
+
+              <Text ml={4} fontSize="22px" mt={2}>
+                Visibility
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              Unlimited
+            </Text>
+          </Box>
         </Box>
+
         <Box
           sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
+            width: "350px",
           }}
         >
+          <Text fontSize="50">06:09 - 19:49</Text>
+
           <Box
+            mt={10}
             sx={{
+              borderTop: "1px solid grey",
               display: "flex",
+              justifyContent: "space-between",
             }}
           >
-            <WiHumidity/>
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <FaWind />
+              </Center>
 
-            <Text>High/Low</Text>
+              <Text ml={4} fontSize="22px" mt={2}>
+                Wind
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              8km/h
+            </Text>
           </Box>
-          <Text>30/20</Text>
-        </Box>
-        <Box
-          sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
-          }}
-        >
           <Box
             sx={{
+              borderTop: "1px solid grey",
               display: "flex",
+              justifyContent: "space-between",
             }}
           >
-            <SmallAddIcon />
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <BsDropletHalf />
+              </Center>
 
-            <Text>High/Low</Text>
+              <Text ml={4} fontSize="22px" mt={2}>
+                Dew Point
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              14
+            </Text>
           </Box>
-          <Text>30/20</Text>
-        </Box>
-        <Box
-          sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
-          }}
-        >
           <Box
             sx={{
+              borderTop: "1px solid grey",
               display: "flex",
+              justifyContent: "space-between",
             }}
           >
-            <AiFillEye />
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <BiSun />
+              </Center>
 
-            <Text>High/Low</Text>
+              <Text ml={4} fontSize="22px" mt={2}>
+                UV Index
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              0 of 10
+            </Text>
           </Box>
-          <Text>30/20</Text>
+          <Box
+            sx={{
+              borderTop: "1px solid grey",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+              }}
+            >
+              <Center>
+                <WiMoonAltWaxingCrescent3 />
+              </Center>
+
+              <Text ml={4} fontSize="22px" mt={2}>
+                Moon Phase
+              </Text>
+            </Box>
+            <Text ml={4} fontSize="22px" mt={2}>
+              Waning Gibbous
+            </Text>
+          </Box>
         </Box>
       </Box>
-
-      <Box sx={{
-        border:"1px solid red",
-        width:"350px"
-      }}>
-        <Text fontSize="50">21</Text>
-        <Text fontSize="15">Feels Like</Text>
-        <Box
-          sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <FaWind />
-
-            <Text>High/Low</Text>
-          </Box>
-          <Text>30/20</Text>
-        </Box>
-        <Box
-          sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <BsDropletHalf />
-
-            <Text>High/Low</Text>
-          </Box>
-          <Text>30/20</Text>
-        </Box>
-        <Box
-          sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <BiSun />
-
-            <Text>High/Low</Text>
-          </Box>
-          <Text>30/20</Text>
-        </Box>
-        <Box
-          sx={{
-            borderTop: "1px solid grey",
-            display: "flex",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <WiMoonAltWaxingCrescent3 />
-
-            <Text>High/Low</Text>
-          </Box>
-          <Text>30/20</Text>
-        </Box>
-      </Box>
-
-      </Box>
-
     </Container>
   );
 };
