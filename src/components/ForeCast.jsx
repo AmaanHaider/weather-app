@@ -1,8 +1,26 @@
 import { SunIcon } from "@chakra-ui/icons";
 import { Box, Button, Center, Container, Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import axios from "axios";
+import React,{ useEffect, useState } from "react";
 
 const ForeCast = () => {
+
+  
+  // const [data, setData] = useState([]);
+  
+  // const fetchData = async () => {
+    //    await axios
+    //     .get("http://localhost:4040/query")
+    //     .then((res) => setData(res.data.results.channel))
+    //     .catch((err) => console.log(err.message));
+    // };
+    
+    // useEffect(() => {
+    //   fetchData();
+    // }, []);
+  // console.log(data);
+
+
   return (
     <Container p={4}  maxW="750px" mt={7} sx={{
       borderRadius:"8px",
