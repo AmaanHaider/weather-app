@@ -34,7 +34,7 @@ const ForeCast = () => {
         
         }}
         >
-          <Text>Morning</Text>
+          <Text>Afternoon</Text>
           <Text>25c</Text>
           <SunIcon/>
           <Text>0%</Text>
@@ -45,7 +45,7 @@ const ForeCast = () => {
           width:"22%"
         
         }}>
-          <Text>Morning</Text>
+          <Text>Evening</Text>
           <Text>25c</Text>
           <SunIcon/>
           <Text>0%</Text>
@@ -56,7 +56,9 @@ const ForeCast = () => {
           width:"22%"
         
         }}>
-          <Text>Morning</Text>
+          <Text sx={{
+            fontWeight:"bold"
+          }}>Overnight</Text>
           <Text>25c</Text>
           <SunIcon/>
           <Text>0%</Text>
