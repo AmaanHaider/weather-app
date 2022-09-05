@@ -4,7 +4,7 @@ import React from "react";
 
 const TopComp = () => {
   return (
-    <Container maxW="750px" mt={2} sx={{
+    <Container p={5} maxW="750px" mt={2} sx={{
       borderRadius:"8px",
      backgroundImage:`url("https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)` 
     }}>

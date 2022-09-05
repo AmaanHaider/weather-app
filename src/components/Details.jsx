@@ -9,7 +9,7 @@ import { WiHumidity, WiMoonAltWaxingCrescent3 } from "react-icons/wi";
 
 const Details = () => {
   return (
-    <Container
+    <Container p={4}
       maxW="750px"
       mt={7}
       sx={{

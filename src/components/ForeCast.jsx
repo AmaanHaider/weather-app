@@ -4,7 +4,7 @@ import React from "react";
 
 const ForeCast = () => {
   return (
-    <Container  maxW="750px" mt={7} sx={{
+    <Container p={4}  maxW="750px" mt={7} sx={{
       borderRadius:"8px",
       backgroundColor:"white"
     }}>
