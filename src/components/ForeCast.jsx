@@ -8,7 +8,7 @@ const ForeCast = () => {
       borderRadius:"8px",
       backgroundColor:"white"
     }}>
-      <Heading size='md'>Todays Forecast for New Your City,Ny,United States</Heading>
+      <Heading size='md'>Todays Forecast for New Your City,NY,United States</Heading>
     
 
       <Box mt={5}  sx={{
